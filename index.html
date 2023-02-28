@@ -9,18 +9,64 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <h1> Hello World, we are software developers!</h1>
+    <h1 id="title">Martin/Eugene Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form action="/form-handling-url" method="post" class="main_parent" id="survey-form">
+      <fieldset class="parent">
 
-    Hello Camper!
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+        />
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+      <div class="form-group">
+          <label for="Email">Email</label>
+          <input type="email" class="form-control" id="firstName" name="first_name" placeholder="Enter your email">
+      </div>
 
-    - The freeCodeCamp Team
+      <div class ="form-group">
+          <label for="number">Age(optional)</label>
+          <input type="number" id="number label" name="Age" class="form-control">
+      </div>
 
-    -->
+      <div class="form-group">
+          <label for="role">Which option best describes your current role?</label>
+          <select id="role" class="form-control" name="user_role_name">
+          <option value="student">Student</option>
+          <option value="instructor">Fuultime job</option>
+          <option value="guest">Fulltime learner</option>
+          <option value="student">Prefer not to say</option>
+          <option value="student">Other</option>
+          </select>
+      </div>
+
+      <div class="child choice">
+          <p>Would you recommend Microverse to a friend?</p>
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html">Definately</label><br>
+          <input type="radio" id="css" name="fav_language" value="CSS">
+          <label for="css">Maybe</label><br>
+          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+          <label for="javascript">Not sure</label>
+      </div>
+      <div class="form-group">
+        <label for="role">What is your favorite feature of Microverse?</label>
+        <select id="role" class="form-control" name="user_role_name">
+        <option value="student">Challenges</option>
+        <option value="instructor">Projects</option>
+        <option value="guest">Community</option>
+        <option value="student">Open source</option>
+        <option value="student">Other</option>
+        </select>
+      </div>
+       
+     
     <script  src="js/index.js"></script>
   </body>
 </html>
