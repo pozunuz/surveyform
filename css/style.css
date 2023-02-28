@@ -1,8 +1,15 @@
 body {
+    /* text-align: center; */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #title, #description{
     text-align: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .form-group {
-      margin: 0 auto 1.25rem auto;
+      margin: ;
       padding: 0.25rem;
       margin-bottom: 20px;
       font-size: 20px;
@@ -29,7 +36,7 @@ body {
     text-align: center;
     width: 80%;
     margin-left: 10%;
-    background-color: darkslateblue;
+    background-color: rgb(49, 45, 73);
   }
   .main-parent {
     margin-left: 10%;
@@ -39,5 +46,43 @@ body {
     margin-left: 0.25rem;
     font-size: 0.9rem;
     color: #e4e4e4;
+  }
+  .checker {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1rem;
+    min-width: 1rem;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .child-comments{
+    min-height: 100px;
+    width: 70%;
+    padding: 0.625rem;
+    resize: vertical;
+  }
+  #submit {
+    background-color: green;
+    width: 200px;
+    height: 50px;
+  }
+  h1 {
+    font-size: 70px;
+    color: aquamarine;
+  }
+  p {
+    font-size: 25px;
   }
  
